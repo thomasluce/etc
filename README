@@ -1,0 +1,16 @@
+etc. Is a simple stack-machine language in the vein of BrainFuck.
+
+I thought it was funny to see a bunch of *aaS service advertising, "Java, .NET,
+Node, PHP, etc.", and thinking, "what is etc? Why you no document!" So I
+thought I would resolve the ambiguity. I bring you, etc..
+
+It's a simple stack machine with the following operations:
+
+... : Increment the pointer
+..  : Decrement the pointer
+.   : Input and place byte at pointer
+'   : Output the byte at the pointer
+    : (Two space characters) Increment the byte at the pointer
+    : (A single space) Decrement the byte at the pointer
+\n  : Skip next instruction if value at pointer is 0
+\t  : Skip next instruction if value at pointer is > 0
