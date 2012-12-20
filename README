@@ -14,3 +14,5 @@ It's a simple stack machine with the following operations:
     : (A single space) Decrement the byte at the pointer
 \n  : Skip next instruction if value at pointer is 0
 \t  : Skip next instruction if value at pointer is > 0
+/   : Go to instruction at the value of the current pointed to memory. So, if
+      pointer is 0, and mem[0] == 4, go to the 4th instruction.
